@@ -11,8 +11,7 @@ def power(a, b):
         return 1
     elif b == 1:
         return a
-    else:
-        return a * power(a, b-1)
+    return a * power(a, b-1)
 
 a = int(input("Введите число: "))
 b = int(input("Введите степень: "))

@@ -8,27 +8,9 @@
 import os
 os.system('cls')
 
-# получаем данные от пользователя
-n = int(input("Введите количество элементов первого массива: "))
-arr1 = []
-elements = input("Введите элементы первого массива через пробел: ")
-elements_list = elements.split()  # разбиваем строку на отдельные числа
-
-for i in range(n):
-    arr1.append(int(elements_list[i]))
-
-m = int(input("Введите количество элементов второго массива: "))
-
-arr2 = []
-elements2 = input("Введите элементы второго массива через пробел: ")
-elements_list2 = elements2.split()
-
-for i in range(m):
-    arr2.append(int(elements_list2[i]))
-# выводим элементы первого массива, которых нет во втором массиве
-result = []
-for num in arr1:
-    if num not in arr2:
-        result.append(num)
-print("Элементы первого массива, которых нет во втором массиве:")
-print(result)
+list_1 = [-5, 9, 0, 3, -1, -2, 1, 4, -2, 10, 2, 0, -9, 8, 10, -9, 0, -5, -5, 7]
+min_number = int(input())
+max_number = int(input())
+for i in range(len(list_1)):
+    if min_number <= list_1[i] <= max_number:
+        print(i)
